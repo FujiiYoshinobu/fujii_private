@@ -1,0 +1,13 @@
+section {
+    width: 1000px;
+    height: 1000px;
+    object-fit: cover;
+    background: url(https://pokewalls.wordpress.com/wp-content/uploads/2019/08/megarayquaza1600x1200.jpg)
+        40% center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}

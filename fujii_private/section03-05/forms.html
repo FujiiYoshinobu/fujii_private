@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form demo</title>
+  </head>
+  <body>
+    <form action="/tacoco">
+      <label for="text">text:</label>
+      <input id="text" placeholder="テキストを入力" name="usernames" /><br />
+      <label for="password">password:</label>
+      <input id="password" placeholder="パスワードを入力" /><br />
+      <label>color? : <input type="color" placeholder="aaa" /><br /> </label>
+      <input type="month" /><br />
+      <input type="number" min="2" , max="8" /><br />
+      <input type="time" /><br />
+      <input type="radio" /><br />
+
+      <button type="reset">リセットボタン</button>
+      <input type="submit" />
+    </form>
+    <form action="https://www.youtube.com/results?search_query">
+      <input type="text" name="search_query" />
+      <button>検索</button>
+    </form>
+    <hr />
+    <form action="https://www.google.com/search?q=">
+      <input type="text" name="q" /><button>google 検索</button>
+    </form>
+    <h2>input 続き</h2>
+    <form action="/bibi">
+      <p>
+        <input type="checkbox" name="agree_tos" id="agree" />
+        <label for="agree">同意します</label>
+      </p>
+
+      <button>送信</button>
+      <p>
+        <label for="S">S:</label>
+        <input type="radio" name="a" id="" value="S" />
+        <label for="M">S:</label>
+        <input type="radio" name="a" id="" value="M" />
+        <label for="L">S:</label>
+        <input type="radio" name="a" id="" value="L" />
+      </p>
+      <label for="mealmeal">食事を選択してください</label>
+      <select name="meal" id="mealmeal">
+        <option value="u">う</option>
+        <option value="e">え</option>
+        <option value="o">お</option>
+        <option value=""></option>
+      </select>
+      <p>
+        <label for="ch">チーズの量</label>
+        <input
+          type="range"
+          id="ch"
+          min="1"
+          max="100"
+          name="ch_level"
+          step="7"
+        />
+      </p>
+      <p>
+        <label for="comments">その他コメント:</label>
+        <textarea name="comm" id="comments" rows="10" cols="40"></textarea>
+      </p>
+    </form>
+
+    <h2>バリデーションdemo</h2>
+    <form action="/dummy">
+      <label for="first">名前：</label>
+      <input type="text" id="first" name="first" required />
+      <p>
+        <label for="username">ユーザー名：</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          minlength="5"
+          maxlength="20"
+          required
+        />
+      </p>
+      <p>
+        <input type="url" required />
+      </p>
+
+      <button>送信</button>
+    </form>
+  </body>
+</html>
